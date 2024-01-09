@@ -79,3 +79,26 @@ shell: fish
 ## Do windows have distros?
 - Windows is not open-source so peoples won’t use / edit it, so there won’t be other kind.
 - It just give updates and adds some feature on it.
+
+# How to run Linux on windows device
+- main OS / main-boot
+- Dual boot / 2in1
+- live boot (USB, disk)
+- cloud terminals [webminal](http://webminal.org)
+- WSL v2 (Windows Subsystem for Linux)
+- Termux (android)
+- virtual machines(guest OS)
+## virtualization
+- Computers have a Technology called “VIRTUALIZATION”. This is the method how it allocate our using memory to the virtual machines/ VM’s 
+- This is a method to use windows and linux together.
+- Software's that gives you This ability:
+    - HyberV
+    - QEMU
+    - Virtual Box - Oracle
+    - VMware
+- to check the system to virtualize 
+1. Open task manager
+2. Go to performance
+3. Open CPU
+- If it is disables, you have to enable in BIOS settings
+- If is is enabled we are good to go.
