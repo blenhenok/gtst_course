@@ -8,12 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "e68759d0bb433821",
+            "id": "e8d3591fa0f34553",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Day1_intro.md",
+                "file": "Day2_linux.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Day1_intro.md",
+                "file": "Day2_linux.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Day1_intro.md",
+                "file": "Day2_linux.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Day1_intro.md"
+                "file": "Day2_linux.md"
               }
             }
           }
@@ -146,10 +146,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "e68759d0bb433821",
+  "active": "e8d3591fa0f34553",
   "lastOpenFiles": [
-    "CEH/intro to ethical hacking.md",
     "Day1_intro.md",
+    "Day2_linux.md",
+    "CEH/intro to ethical hacking.md",
     "CEH",
     "operating system note.md"
   ]

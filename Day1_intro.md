@@ -82,3 +82,4 @@ ATTACK = MOTIVE(goal) + METHOD + VULNERABILITY
 - **Blue team** : are defensive people, who will do firewalls and try to protect the system.
 - **Vulnerability assessment**: security check based on some list.
 - **Security audit**: evaluation of an organization's security control and policies.
+[[Day2_linux]]
