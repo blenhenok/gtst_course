@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CEH/intro to ethical hacking.md",
+                "file": "Day1_intro.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CEH/intro to ethical hacking.md",
+                "file": "Day1_intro.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CEH/intro to ethical hacking.md",
+                "file": "Day1_intro.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CEH/intro to ethical hacking.md"
+                "file": "Day1_intro.md"
               }
             }
           }
@@ -148,8 +148,8 @@
   },
   "active": "e68759d0bb433821",
   "lastOpenFiles": [
-    "Day1_intro.md",
     "CEH/intro to ethical hacking.md",
+    "Day1_intro.md",
     "CEH",
     "operating system note.md"
   ]
