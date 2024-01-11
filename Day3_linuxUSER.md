@@ -61,3 +61,129 @@
 ## Mostly used app
 - Software for some basic purposes.
 - ![](https://lh7-us.googleusercontent.com/x7zLf__YTKtsDcFpPFKeLQpV3hKG0EQljbc0Uy_ylrFRFX4Po2OdXS4FmjzsFq4i5p3VB38imrz2PgjnozrLF890FK4SlitifaJmig_9HtkOuaspnfdlUqIKyW7A-02q7s0VPzELF19T0jcDnmPyMQAKkA=s300)
+# Linux basic commands
+- Linux Systems uses shell. The shell help us to Communicate with the kernel and helps to execute codes.
+- linux shell also called terminal.
+- the terminal has 5 parts
+    - Username = rexder
+    - Hostname = HunterMachine
+    - Current Directory = PATH
+    - Privilege = ($-user) , (#root)
+    - Command place = _
+- Home directory is ~   
+- Local directory with .  
+- All directory *
+- ![](https://lh7-us.googleusercontent.com/KcJq0TTvN0aonWr8lApzT88eeNxFlksMP-O9z8Yvs0iNoZGoDfA12FSFjmODyiod-yB-eYUX8XQAD7jTZgWDTCeq-5BVDQKm8jaLeYDY4Fae4nmdasHB_xyPPyJRSWflkHELtOzMGW3bxyIPN591EYdoUw=s400)
+- *COMMAND is Small programs that do one task well*
+![](https://lh7-us.googleusercontent.com/W0SvBD8Q1-bgNd477-Ma29HE2G8T4My8Nq1f0MBBt238eFbwU8lZLpmFgaLsnr5pWhg9hbxOWewmOuSHe8MTsDXn1jBV0HREEP5r6Yc62ilXT8nWlEgf9dzxf8gbmEgIdSUQd1BQ3nU-4BNBzrFb_FX4TQ=s2048)
+### ls 
+- (list): List  information  about  the FILEs (the current directory by default).
+- ls  *options*  *file*
+EXAMPLE: ls -la
+
+| options | description |
+| ---- | ---- |
+| -l | list as long format with detailed information |
+| -a | list all files including hidden ones. *hidden files start with.* |
+| -R | list files and directories recursively, including subdirectories |
+| -t | sort files and directories by their last modification order, recently modified first |
+| -S  | sort files and directories by their sizes, largest ones first |
+| -r | list in reverse order from default  |
+### cd 
+- (change directory):  It is used to change current working directory.
+- cd  *directory or file*
+- EXAMPLE: cd ..
+
+| options | descriptions |
+| ---- | ---- |
+| / | root |
+| .. | 1x back |
+| ../.. | 2x back |
+|  cd | home |
+### pwd 
+- (print working directory): It prints the path of the working directory, starting from the root.
+### echo 
+ - is used to display line of text/string that are passed as an argument . This is a built in command that is mostly used in shell scripts and batch files to output status text to the screen or a file.
+echo *option*  *string*
+- redirecting echo output
+    - echo "*text*" > file : writes the output of echo command into the file. overwrites if it already exists.
+    - echo "*text*" >> file : append the text into the file.
+### cat
+- to view the content of  a file. 
+- cat *file*
+
+| options | description  |
+| ---- | ---- |
+| cat *file1*  *file2* | to display content of multiple files at once |
+| cat *file1*  *file2*  >  *file3* | combines the content of file1 and file2 into new file file3 |
+| cat *file1*  >>  *file2* | to append content of file1 to end of file2. |
+### touch
+-  Creates any kind of Files with the name you gave it, without any content inside.
+- touch *filename*
+- touch  *file1*  *file2* : to create multiple files at once.
+### mkdir
+- (make directory): created directory or folders.
+- mkdir  *directory name*
+- mkdir  *dir1*  *dir2* : to create multiple directories
+### rm
+- (remove): to remove objects like files, directories and links.
+- rm  *option*       *file*
+
+| options | description |
+| ---- | ---- |
+| rm  *file* | deletes file |
+| rm  *file1*  *file2* | deletes multiple files |
+| -r  *dir* | (recursive) deletes directory with all files in it. |
+| -i | interactive deletion (ask) |
+| -f  | force deletion, ying, even if the user lacks writing permission  |
+| * | all |
+### cp
+- to copy file content from one file to another.
+- cp  *source*     *destination*
+- if destination file doesn't exist it will be created and if it already exists it will be overwritten without warning.
+
+| option | description |
+| ---- | ---- |
+| cp *src_file1* *src_file2*  *des_dir* | copies source files into the destination directory |
+| -R,  cp -R *src_dir*  *des_dir* | copies all files form source directory to the destination directory  |
+| -i | interactive copying |
+| -f | forces copying, even if the user lacks writing permission  |
+### mv
+- moves files and directories.
+- also used to rename files and directory 
+- mv  *option*  *source*  *destination*
+
+| options | description |
+| ---- | ---- |
+| mv *old_file_name*  *new_file_name* | renames the file or directory old name with the new name |
+| mv *src_file*  *destination_path* | moves the file or directory into the destination |
+| mv *src_file1*   *src_file2*   *destination_path* | moves both files into the destination directory  |
+### grep
+- global search for regular expression and printout. 
+- searches a file for particular pattern and display all lines found containing that pattern.
+- grep *option*  *pattern*  *file*
+
+| options | description |
+| ---- | ---- |
+| -c | prints only count of lines that match the pattern |
+| -i | ignores case for macthing |
+| -l | display list of file names only |
+| -n | display the matched lines and their line number |
+| -v | prints all lines that don't matches the patter |
+| -R | search the pattern in the folders |
+### wc
+- (word count): It is used to find out number of lines, word count, byte and characters count in the files specified in the file arguments.
+- wc  *option*   *file*
+- lines(-l)
+- word(-w)
+- byte(-c)
+
+# Multiple command execution 
+- You can run/ execute multiple commands in 1 line. using:
+1. **And ( && )**: All commands you entered will be executed. If both are working without error.
+- if one of the commands return error, the later part of the chain won't be executed.
+- Example: touch file.txt && echo "new file" 
+- *command* && *command* && *command*
+2. **Or ( || )**: will execute the second command if the first one fails
+3. **piping ( | )**: run commands by using the output of the 1st command as the input for the next one.
+- EXAMPLE:  cat file.txt  |  grep 'hello'

@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "af2691c55d930174",
+        "id": "5175cc67cc460726",
         "type": "tabs",
         "children": [
           {
-            "id": "3373e77b48345487",
+            "id": "06ec8284db1c75fb",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -146,10 +146,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "3373e77b48345487",
+  "active": "06ec8284db1c75fb",
   "lastOpenFiles": [
-    "Day2_linux.md",
+    "[.md",
     "Day3_linuxUSER.md",
+    "Day2_linux.md",
     "Day1_intro.md",
     "CEH/intro to ethical hacking.md",
     "CEH",
