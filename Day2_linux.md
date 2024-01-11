@@ -102,3 +102,5 @@ shell: fish
 3. Open CPU
 - If it is disables, you have to enable in BIOS settings
 - If is is enabled we are good to go.
+
+[[Day3_linuxUSER]]

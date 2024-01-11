@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "8bccc590803a1f6a",
+        "id": "af2691c55d930174",
         "type": "tabs",
         "children": [
           {
-            "id": "e8d3591fa0f34553",
+            "id": "3373e77b48345487",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Day2_linux.md",
+                "file": "Day3_linuxUSER.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Day2_linux.md",
+                "file": "Day3_linuxUSER.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Day2_linux.md",
+                "file": "Day3_linuxUSER.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Day2_linux.md"
+                "file": "Day3_linuxUSER.md"
               }
             }
           }
@@ -146,10 +146,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "e8d3591fa0f34553",
+  "active": "3373e77b48345487",
   "lastOpenFiles": [
-    "Day1_intro.md",
     "Day2_linux.md",
+    "Day3_linuxUSER.md",
+    "Day1_intro.md",
     "CEH/intro to ethical hacking.md",
     "CEH",
     "operating system note.md"
