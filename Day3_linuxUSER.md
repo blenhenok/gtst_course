@@ -171,8 +171,10 @@ echo *option*  *string*
 | -n | display the matched lines and their line number |
 | -v | prints all lines that don't matches the patter |
 | -R | search the pattern in the folders |
+|  |  |
 ### wc
-- (word count): It is used to find out number of lines, word count, byte and characters count in the files specified in the file arguments.
+- (word count): It is used to find out number of lines, word count, byte and charact
+- ers count in the files specified in the file arguments.
 - wc  *option*   *file*
 - lines(-l)
 - word(-w)
@@ -187,3 +189,51 @@ echo *option*  *string*
 2. **Or ( || )**: will execute the second command if the first one fails
 3. **piping ( | )**: run commands by using the output of the 1st command as the input for the next one.
 - EXAMPLE:  cat file.txt  |  grep 'hello'
+
+### READING ASSIGNMENT
+## sed command
+- It lets you modify the data it finds. Sed opens a file, reads it line by line, and acts on each line according to its instructions.
+- it is short for stream editor
+
+## awk command
+- It is a full-featured programming language with functions, variables, flow control, and support for different data types.
+- AWK’s primary use cases are the following:
+    - Processing field-oriented data
+    - Numeric comparisons and calculations
+
+EXAMPLE:
+
+| File: names.txt |  |  |  |  |
+| ---- | ---- | ---- | ---- | ---- |
+| Vince     | Lombardi | Toyota | Fordham | 1913 |
+| betty | ford | Chevrolet  | Bennington  | 1918 |
+| harrison | ford | Toyota  | Ripon  | 1942 |
+| mike | rowe | ford | Towson  | 1962 |
+1. *Process Data in Multiple Fields*
+You can use AWK to find all the people that drive a Toyota. AWK automatically breaks up each line into fields and columns using whitespaces as the delimiter. The first field is stored in variable $1, the second in $2, and so on. To search for the people who own a “Toyota”, use the field stored in the $3 variable, as follows:
+`awk '($3 == "Toyota") {print}' names.txt `
+output:
+
+```
+Vince       Lombardi    Toyota      Fordham     1913
+Harrison    Ford        Toyota      Ripon       1942
+```
+
+2. *Numeric Comparisons and Calculations*
+it supports comparison and arithmetic operators. For example, to print the last name of people who were born before 1945 (using the data in names.txt) use the following command:
+`awk '($5 < 1945) {print $2}' names.txt`
+output:
+```
+Lombardi
+Ford
+Ford
+```
+
+AWK can also perform arithmetic on the fields it works with. To find the birth year average for all people in the names.txt file, use the following AWK command:
+`awk '{total += $5} END {print total/NR}' names.txt`
+The output returns the following average:
+```
+1933.75
+```
+
+[[Day4_MoreLinux]]
