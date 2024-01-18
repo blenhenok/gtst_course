@@ -103,4 +103,8 @@ shell: fish
 - If it is disables, you have to enable in BIOS settings
 - If is is enabled we are good to go.
 
+ctrl + shift + c = copy
+ctrl + shift +v = paste
+ctrl + shift +x = cut
+
 [[Day3_linuxUSER]]
