@@ -133,4 +133,6 @@
 - The User files are stored inside **/etc/passwd**
 - The User password are stored inside **/etc/shadow**
 - When you create a user it creates a group with that name.
-![[Pasted image 20240118103007.png]]
+- ![[Pasted image 20240118103007.png]]
+
+[[Day5_LinuxRUN]]
