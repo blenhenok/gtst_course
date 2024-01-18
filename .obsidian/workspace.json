@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Day4_MoreLinux.md",
+                "file": "Day5_LinuxRUN.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Day4_MoreLinux.md",
+                "file": "Day5_LinuxRUN.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Day4_MoreLinux.md",
+                "file": "Day5_LinuxRUN.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Day4_MoreLinux.md"
+                "file": "Day5_LinuxRUN.md"
               }
             }
           }
@@ -148,12 +148,18 @@
   },
   "active": "b921aabcf4bbd1ba",
   "lastOpenFiles": [
+    "psy.png",
+    "pa.png",
+    "p.png",
+    "fs.png",
+    "Pasted image 20240118105615.png",
     "Day5_LinuxRUN.md",
-    "Pasted image 20240118104535.png",
+    "Pasted image.md",
     "Day4_MoreLinux.md",
+    "Day3_linuxUSER.md",
+    "Pasted image 20240118104535.png",
     "Pasted image 20240118103007.png",
     "Day2_linux.md",
-    "Day3_linuxUSER.md",
     "().md",
     "Untitled",
     "Day4_MoreLinux",
