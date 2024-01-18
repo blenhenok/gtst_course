@@ -38,7 +38,7 @@
     - *chown* user:group 'filename'
 ![[p.png]]
 
-### chown command
+## chown command
 - To change the ownership of a file
 
 | commands | descriptions |
@@ -54,9 +54,9 @@
     - ***x*** (Execute) – Can run(enter) the file (if its executable)
     - ***–***: No permission set
 
-### chmod command
+## chmod command
 - used to change permission of files.
-#### using chmod in absolute mode
+### using chmod in absolute mode
 - In the absolute mode, permissions are represented in numeric form (octal system to be precise). In this system, each file permission is represented by a number.
     - r (read) = 4
     - w (write) = 2
@@ -65,7 +65,7 @@
 - With these numeric values, you can combine them and thus one number can be used to represent the entire permission set.
 ![[pa.png]]
 
-#### using chmod in symbolic mode
+### using chmod in symbolic mode
 - The problem with the absolute mode is that you should always provide three numbers for all the three owners even if you want to change the  permission set for just one owner.
 - In symbolic mode, owners are denoted with the following symbols:
     - u = user owner
