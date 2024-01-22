@@ -80,3 +80,41 @@
 
 ### Advanced file permissions
 
+![[sp.png]]
+- means the file belongs to the root user and root group.
+- Meaning if admin add suid bit on some program. Then any user if they got that program they can run it as root with any sudo password
+- They are
+    - ***SUID bits(s)*** - set user ID bit - add 4 in front of our numeric value  ->  4000
+    - ***SGID bits(S)*** - set group ID bit - add 2 in front of our numeric value ->  2777
+    - ***Sticky bits(t)*** - set other ID bit - add 1 in front of our numeric value -> 1602
+- They are permissions like the execute(x), but they will set the execute permission to the user who settled them. Meaning if admin add suid bit on some program. Then any user if they got that program they can run it as root with any sudo password.
+
+# Package installation on Linux
+- ON linux to install software you use package managers.
+Ex: apt, pacman, dpkg,...
+- **Package managers** are a free-software user interface that work with an online server to handle the installation and removal of software on Debian, and Debian-based Linux distributions.
+
+### Advanced package tool / apt /
+- Apt is a free-software user interface that work with an online server to handle the installation and removal of software on Debian, and Debian-based Linux distributions used for online and offline purpose.
+- The old ‘apt’ used as ‘apt-get’
+- Syntax
+    - *sudo apt update*
+    - *sudo apt search* 'software name'
+    - *sudo apt install* 'software name'
+    - *sudo apt remove* 'software name'
+    - *sudo apt upgrade*
+    - *sudo apt purge* 'software name'
+![[Pasted image 20240122110746.png]]
+
+### Debian package manager / dpkg
+- Dpkg is an offline package managing program.
+- Packages on Debian have an extension “.deb”
+- Syntax
+    - sudo dpkg -i 'package name'
+    - sudo dpkg -r 'package name'
+    - sudo dpkg -P 'package name'
+## The repository
+- This is the site/ server kali use to upload the packages
+## Package dependency
+- A software can be built based on another program called ‘modules’. SO, a program to work properly, the dependencies have to be installed successfully.
+- Those package managers install the software+dependencies.
