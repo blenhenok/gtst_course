@@ -8,12 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "b921aabcf4bbd1ba",
+            "id": "f11bac1c163cc681",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Day5_LinuxRUN.md",
+                "file": "Day6_FinalLinux.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Day5_LinuxRUN.md",
+                "file": "Day6_FinalLinux.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Day5_LinuxRUN.md",
+                "file": "Day6_FinalLinux.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Day5_LinuxRUN.md"
+                "file": "Day6_FinalLinux.md"
               }
             }
           }
@@ -146,8 +146,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "b921aabcf4bbd1ba",
+  "active": "f11bac1c163cc681",
   "lastOpenFiles": [
+    "Day5_LinuxRUN.md",
+    "Day6_FinalLinux.md",
+    "Pasted image 20240122112546.png",
+    "Pasted image 20240122112448.png",
     "Pasted image 20240122110815.png",
     "Pasted image 20240122110746.png",
     "sp 1.png",
@@ -156,13 +160,9 @@
     "pa.png",
     "p.png",
     "fs.png",
-    "Pasted image 20240118105615.png",
-    "Day5_LinuxRUN.md",
     "Pasted image.md",
     "Day4_MoreLinux.md",
     "Day3_linuxUSER.md",
-    "Pasted image 20240118104535.png",
-    "Pasted image 20240118103007.png",
     "Day2_linux.md",
     "().md",
     "Untitled",
