@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "9e76573a0df95f91",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Day7_HelloPython.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Day6_FinalLinux.md",
+                "file": "Day7_HelloPython.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Day6_FinalLinux.md",
+                "file": "Day7_HelloPython.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Day6_FinalLinux.md"
+                "file": "Day7_HelloPython.md"
               }
             }
           }
@@ -146,12 +159,15 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "f11bac1c163cc681",
+  "active": "9e76573a0df95f91",
   "lastOpenFiles": [
+    "Day3_linuxUSER.md",
+    "Day4_MoreLinux.md",
+    "Day5_LinuxRUN.md",
+    "Day7_HelloPython.md",
+    "Day6_FinalLinux.md",
     "Pasted image 20240122165736.png",
     "Pasted image 20240122165654.png",
-    "Day5_LinuxRUN.md",
-    "Day6_FinalLinux.md",
     "Pasted image 20240122112546.png",
     "Pasted image 20240122112448.png",
     "Pasted image 20240122110815.png",
@@ -160,10 +176,7 @@
     "sp.png",
     "psy.png",
     "pa.png",
-    "p.png",
     "Pasted image.md",
-    "Day4_MoreLinux.md",
-    "Day3_linuxUSER.md",
     "Day2_linux.md",
     "().md",
     "Untitled",
