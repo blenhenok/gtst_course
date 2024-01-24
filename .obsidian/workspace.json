@@ -4,35 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "1274100e36d080c3",
+        "id": "a97f50df1def4eb4",
         "type": "tabs",
         "children": [
           {
-            "id": "f11bac1c163cc681",
+            "id": "761cba3d89789b28",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Day6_FinalLinux.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "9e76573a0df95f91",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Day7_HelloPython.md",
+                "file": "Day8_CorePy.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Day7_HelloPython.md",
+                "file": "Day8_CorePy.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Day7_HelloPython.md",
+                "file": "Day8_CorePy.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Day7_HelloPython.md"
+                "file": "Day8_CorePy.md"
               }
             }
           }
@@ -159,12 +146,16 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "9e76573a0df95f91",
+  "active": "761cba3d89789b28",
   "lastOpenFiles": [
+    "CEH/intro to ethical hacking.md",
+    "Day8_CorePy.md",
+    "Exercise 1, from day8.md",
+    "Untitled",
+    "Day7_HelloPython.md",
     "Day3_linuxUSER.md",
     "Day4_MoreLinux.md",
     "Day5_LinuxRUN.md",
-    "Day7_HelloPython.md",
     "Day6_FinalLinux.md",
     "Pasted image 20240122165736.png",
     "Pasted image 20240122165654.png",
@@ -179,11 +170,9 @@
     "Pasted image.md",
     "Day2_linux.md",
     "().md",
-    "Untitled",
     "Day4_MoreLinux",
     "[.md",
     "Day1_intro.md",
-    "CEH/intro to ethical hacking.md",
     "CEH",
     "operating system note.md"
   ]
