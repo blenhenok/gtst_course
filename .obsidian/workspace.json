@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "a97f50df1def4eb4",
+        "id": "3398d0bbb09ec0fc",
         "type": "tabs",
         "children": [
           {
-            "id": "761cba3d89789b28",
+            "id": "27af0c840b7d2540",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Day8_CorePy.md",
+                "file": "Day9_FurtherPy.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Day8_CorePy.md",
+                "file": "Day9_FurtherPy.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Day8_CorePy.md",
+                "file": "Day9_FurtherPy.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Day8_CorePy.md"
+                "file": "Day9_FurtherPy.md"
               }
             }
           }
@@ -146,13 +146,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "761cba3d89789b28",
+  "active": "27af0c840b7d2540",
   "lastOpenFiles": [
-    "CEH/intro to ethical hacking.md",
+    "Day9_FurtherPy.md",
+    "Day7_HelloPython.md",
     "Day8_CorePy.md",
+    "CEH/intro to ethical hacking.md",
     "Exercise 1, from day8.md",
     "Untitled",
-    "Day7_HelloPython.md",
     "Day3_linuxUSER.md",
     "Day4_MoreLinux.md",
     "Day5_LinuxRUN.md",
