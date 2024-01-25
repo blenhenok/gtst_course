@@ -199,3 +199,38 @@ echo "my father name is hailu"
     - <=
     - =
     - !=
+
+# Bash Conditional statements (if/else)
+- On bash we don't have indentation so to finish writing the body you type “`fi`”
+- If you used [ condition ]  => you will use alphabetic comparison
+- If you used (( condition ))  => you will use numeric comparison
+- *syntax:*
+```bash
+if [condition]  or ((condition))
+then
+body
+else
+body
+fi
+```
+
+**Example:**
+```bash
+#!/bin/bash
+
+echo "Please enter a number: "
+read num
+
+if [ $num -gt 0 ]; then
+  echo "$num is positive"
+elif [ $num -lt 0 ]; then
+  echo "$num is negative"
+else
+  echo "$num is zero"
+fi
+```
+- Script to determine if a number is positive, negative, or zero
+- We can use logical operators such as 
+    - AND `-a` 
+    - OR `-o`
+
