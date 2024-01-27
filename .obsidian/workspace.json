@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "710e4e7865838eca",
+        "id": "bddc1618101aa7d4",
         "type": "tabs",
         "children": [
           {
-            "id": "6a64e7b72c9dc2a1",
+            "id": "b37850f3ff3fbe27",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Day10_FirstBash.md",
+                "file": "Day11_proBash.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Day10_FirstBash.md",
+                "file": "Day11_proBash.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Day10_FirstBash.md",
+                "file": "Day11_proBash.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Day10_FirstBash.md"
+                "file": "Day11_proBash.md"
               }
             }
           }
@@ -146,10 +146,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "6a64e7b72c9dc2a1",
+  "active": "b37850f3ff3fbe27",
   "lastOpenFiles": [
-    "Day9_FurtherPy.md",
     "Day10_FirstBash.md",
+    "Day11_proBash.md",
+    "Day9_FurtherPy.md",
     "Day7_HelloPython.md",
     "Day8_CorePy.md",
     "CEH/intro to ethical hacking.md",
