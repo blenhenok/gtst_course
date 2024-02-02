@@ -3,6 +3,8 @@
 - Regex is PATTERN!
 - it are used on linux tools called grep, awk and sed.
 
+#email_regex: ^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$
+
 # Regex functionality in Python
 - The `re` module in Python provides support for regular expressions. Here is an example of how to use regular expressions in Python:
 ```
@@ -171,5 +173,195 @@ matches = re.findall(pattern, string)
 
 # Print the result
 print(matches)
+
+```
+
+# Bash regex
+- we can use awk, sed or grep to search for a particular pattern in bash.
+- we are using grep for now.
+- On bash terminal these metacharacters have meaning so, we have to escape them by adding `\` in front of the metacharacters
+### EXERSISE
+1. Write A bash code that can accept emails from user name and check if it is Valid email or not, using regex
+```bash
+#!/bin/bash
+
+# Get email address from user
+read -p "Enter your email address: " email
+
+# Define regex pattern for email validation
+regex="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+
+# Check if email is valid
+if [[ $email =~ $regex ]]
+then
+echo "The email address '$email' is valid."
+else
+echo "The email address '$email' is invalid."
+fi
+```
+
+#bash_loop
+## Bash For loop
+- there are two different techniques in using for loop in bash.
+1. **C-style loop**: 
+```sh
+for ((initialize ; condition ; increment));
+do
+'COMMANDS' 
+done
+```
+Example:
+```sh
+for ((i = 0 ; i < 10 ; i++))
+do 
+echo "Hello Friend" 
+done
+```
+
+2.  **List/Range For Loops** :useful if you are working with a list of files (or strings), range of numbers, arrays, output of a command, etc.
+```sh
+for item in [LIST]
+do
+[COMMANDS]
+done
+```
+For example:
+```sh
+for i in {1..10}
+do
+echo "Hello Friend"
+done
+```
+```sh
+for num in {10..0..-1}
+do 
+echo $num
+done
+output: 10,9,8,7,6,5,4,3,2,1,0
+```
+
+## Bash while loop
+```sh
+while [ condition ]
+do
+[COMMANDS]
+done
+```
+
+**For example**, the following script uses a while loop that will print the first ten multiples of the number three:
+```sh
+#!/bin/bash
+
+num=1
+while [ $num -le 10 ]
+do
+echo $(($num * 3))
+num=$(($num+1))
+done
+
+output: 3,6,9,12,15,18,21,24,27,30
+```
+
+## Bash Break statement
+- The break statement terminates the execution of a loop and turn the program control to the next command or instruction following the loop.
+**Example:**
+```sh
+#! /bin/bash
+
+echo "count down for website launch"
+i=10
+while [ $i -ge 1 ]
+do 
+if [ i == 2 ]
+then
+echo "mission aborted"
+fi
+echo $i
+((i--))
+done
+```
+
+## Bash continue statement
+- to skip a loop iteration. The loop continues and moves to the next iteration but the commands after the continue statements are skipped in that partcular iteration.
+**Example:**
+```sh
+#!/bin/bash 
+for ((i=0;i<=10;i++))
+do 
+if [ $(($i % 2)) -ne 1 ]
+then 
+continue 
+fi 
+echo $i 
+done
+```
+
+## Bash until statement
+- an until loop will keep running as long as test condition is false!
+```sh
+until [ condition ]
+do 
+[COMMANDS] 
+done
+```
+**Example:**
+```sh
+#!/bin/bash 
+num=1 
+until [ $num -gt 10 ]
+do 
+echo $(($num * 3)) 
+num=$(($num+1)) 
+done
+```
+
+# Function in bash
+- A Bash function is essentially a set of commands that can be called numerous times. The purpose of a function is to help you make your bash scripts more readable and to avoid writing the same code repeatedly.
+```sh
+#creating a function
+function_name(){
+body
+}
+#calling the function
+function_name
+```
+**Example:**
+```sh
+#!/bin/bash
+
+hello_world () {
+   echo 'hello, world'
+}
+
+hello_world
+```
+## Variables Scope
+- Global variables are variables that can be accessed from anywhere in the script regardless of the scope. In Bash, all variables by default are defined as global, even if declared inside the function.
+- Local variables can be declared within the function body with the `local` keyword and can be used only inside that function. You can have local variables with the same name in different functions.
+**Example:**
+```sh
+#!/bin/bash
+
+var1='A'
+var2='B'
+
+my_function () {
+  local var1='C'
+  var2='D'
+  echo "Inside function: var1: $var1, var2: $var2"
+}
+
+echo "Before executing function: var1: $var1, var2: $var2"
+
+my_function
+
+echo "After executing function: var1: $var1, var2: $var2"
+
+```
+```
+output:
+Before executing function: var1: A, var2: B
+Inside function: var1: C, var2: D
+After executing function: var1: A, var2: D
 
 ```

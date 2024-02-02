@@ -200,6 +200,7 @@ echo "my father name is hailu"
     - =
     - !=
 
+#if_statement
 # Bash Conditional statements (if/else)
 - On bash we don't have indentation so to finish writing the body you type “`fi`”
 - If you used [ condition ]  => you will use alphabetic comparison
