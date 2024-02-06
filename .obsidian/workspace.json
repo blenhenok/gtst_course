@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "0226e2d8117300a0",
+        "id": "66d7e1f083efc3d2",
         "type": "tabs",
         "children": [
           {
-            "id": "194360b5f3614a09",
+            "id": "9ff2f9a897a26575",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "list",
+                "query": "input",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -146,20 +146,25 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "194360b5f3614a09",
+  "active": "9ff2f9a897a26575",
   "lastOpenFiles": [
-    "Day12_network.md",
-    "Day11_proBash.md",
-    "Day10_FirstBash.md",
-    "Day4_MoreLinux.md",
+    "assignment2.py",
+    "Pasted image 20240206133624.png",
     "Day9_FurtherPy.md",
-    "Day7_HelloPython.md",
     "Day8_CorePy.md",
+    "Day7_HelloPython.md",
+    "Day11_proBash.md",
+    "Day12_network.md",
+    "Day10_FirstBash.md",
+    "Day5_LinuxRUN.md",
+    "Day4_MoreLinux.md",
+    "Day3_linuxUSER.md",
+    "Day2_linux.md",
+    "Day1_intro.md",
+    "Pasted image 20240205103750.png",
     "CEH/intro to ethical hacking.md",
     "Exercise 1, from day8.md",
     "Untitled",
-    "Day3_linuxUSER.md",
-    "Day5_LinuxRUN.md",
     "Day6_FinalLinux.md",
     "Pasted image 20240122165736.png",
     "Pasted image 20240122165654.png",
@@ -169,14 +174,10 @@
     "Pasted image 20240122110746.png",
     "sp 1.png",
     "sp.png",
-    "psy.png",
-    "pa.png",
     "Pasted image.md",
-    "Day2_linux.md",
     "().md",
     "Day4_MoreLinux",
     "[.md",
-    "Day1_intro.md",
     "CEH",
     "operating system note.md"
   ]

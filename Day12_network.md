@@ -5,7 +5,7 @@
 - Computers on a network can act as a client or a server.
 
 ### client computer
-- **client** is a device or software application that requests services or resources from another computer on the network, called a server. Clients typically have less processing power and memory than servers and rely on servers to provide them with data and services. Examples of client devices include personal computers, smartphones, and tablets. Examples of client software applications include web browsers, email clients, and file transfer clients.
+- client is a device or software application that requests services or resources from another computer on the network, called a server. Clients typically have less processing power and memory than servers and rely on servers to provide them with data and services. Examples of client devices include personal computers, smartphones, and tablets. Examples of client software applications include web browsers, email clients, and file transfer clients.
 ### server computers
 - they are devices or software applications that provide services or resources to clients on the network. Servers typically have more processing power and memory than clients and are designed to handle multiple requests from clients simultaneously. Examples of server devices include web servers, email servers, and file servers. Examples of server software applications include web server software, email server software, and database server software.
 
@@ -32,7 +32,7 @@
     - Peer-to-peer networks are cheap and easy to install.
     - They are popular as home networks and for use in small companies.
     - Most operating systems come with built-in peer-to-peer networking capability.
-    - The maximum number of peers that can operate on a peer-to-peer network is ten.
+    - The maximum number of peers that can operate on a peer-to-peer network is 10.
 2. **Server based**: provide services or resources to clients on the network. offers centralized control and is designed for secure operations.
     - Servers typically have more processing power and memory than clients and are
     - designed to handle multiple requests from clients simultaneously.
@@ -52,6 +52,205 @@
 ### IP structure
 - every Ip has four section. each section is 8bit long.
 - each section can range from 0 - 255.
-*1 section = 1 byte = 8 bits*
-*4 sections = 4 bytes = 32 bits*
+- *1 section = 1 byte = 8 bits*
+- *4 sections = 4 bytes = 32 bits*
+- When you connect to some network an IP address will be generated and given(automatically by DHCP or static way).
+
+- Every IP address has two parts:   
+    - **Network ID**: to identify the network, It classifies the network to which a specific host belongs.
+    - **Host ID**: identify the user, uniquely identifies a specific host within a TCP/IP network.
+
 **Example:**  192.168.123.12
+       
+| 192 | 168 | 123 | 12 |
+| ---- | ---- | ---- | ---- |
+| network | network | network | host |
+
+### Private vs. Public
+- **Private IP**: Used within a local network (e.g., home or office). Not accessible from the internet. it is Ip that is given to the host on LAN network.
+- **Public IP**: Assigned by the ISP and accessible from the internet. Used for communication between networks. it is an Ip address that is given to the host on the WAN network.
+
+#### There are 5 classes of private IP address 
+- **CLASS A**:	Governments, have 24bits for hosts.
+
+| 10 | 3 | 2 | 1 |
+| ---- | ---- | ---- | ---- |
+| network | host | host | host |
+- **CLASS B**: 	medium Companies, Have 16bit of space for HOSTS
+
+| 10 | 3 | 2 | 1 |
+| ---- | ---- | ---- | ---- |
+| network | network | host | host |
+- **CLASS C**: 	small companies, Have 8bit of space for HOSTS and 24-bit of network
+
+| 10 | 3 | 2 | 1 |
+| ---- | ---- | ---- | ---- |
+| network | network  | network  | host |
+- **CLASS D**:	Multi Casting(streaming
+- **CLASS E**:	Future Use (IETF research)
+    - both *reserved* for special purposes
+....................... ...................... ............................
+
+| address class | high-order bits | first octet address range | number of bits in the network address | number of networks | number of hosts per network |
+| ---- | ---- | ---- | ---- | ---- | ---- |
+| class A | 0 | 0-127 | 8 | 126 | 16,777,216 |
+| class B | 10 | 128-191 | 16 | 16,384 | 65,536 |
+| class C | 110 | 192-223 | 24 | 2,097,152 | 254 |
+## Reserved Ip address
+- Certain host addresses are reserved and cannot be assigned to devices on a network. 
+- Addresses beginning 127 are reserved for loopback and internal testing
+- An IP address that has binary 0s in all host bit positions is reserved for the network address. 
+- An IP address that has binary 1 or 255s in all host bit positions is reserved for the broadcast address
+
+## IPv6 ( Internet Protocol Version 6)
+- IPv6 is a 128-bit alphanumeric long value that identifies an endpoint devices in IPv6 network.
+- Format of an IPv6 address: 'FE80:CD00:0000:0CDE:1257:0000:211E:729C'
+- Alphanumeric Separated by colon(:)
+- IP generated automatically.
+- The main difference is the IP-space(host holding) IPv4 holds 32-bit ip address but IPv6 holds 128-bit Ip Addresses.
+
+### How to configure your IP address
+- **on windows cmd** : `ipconfig`
+- **on linux**: `ifconfig`
+- **for public ip address**: `curl ifconfig.me`
+
+# MAC(Media Access Control) Address
+- It is Given by A manufacturer of that network adapter.
+- Network adapter is a hardware device that helps us to have connection ( our WIFI adapter or our ethernet port)
+- it is written in six octets in hex
+- It is Alphanumeric, with 2 part
+    - Organizational Unique Id
+    - Universally Administered Address
+![[Pasted image 20240205103750.png]]
+- Organizationally unique identifier: Assigned by IEEE Registration Authority. Determines the first 24 bits of the address
+- **Example:** 00-15-C5 corresponds to “Dell Inc”
+
+# OSI(Open Systems Interconnection) Reference  model
+- it  is a fundamental framework that standardizes how information flows between different computer systems. Developed by the ISO in 1984.
+- Back in Days, Different Company Devices can’t Communicate or create network. OSI Reference Model - internationally standardized network architecture.
+
+- the OSI model consists of **seven layers**, each with specific functions. Let’s explore these layers:
+1. **Physical Layer (Layer 1)**:
+    - The lowest layer deals with the physical connection between devices.
+    - It transmits individual bits from one node to another.
+    - Functions include bit synchronization, defining transmission rates, and specifying physical topologies (e.g., bus, star, mesh).
+    - Devices: Hub, Repeater, Modem, Cables.
+    - Your data is Bits
+1. **Data Link Layer (Layer 2)**:
+    - Ensures error-free data transfer between nodes.
+    - Divided into two sublayers:
+        - *Logical Link Control (LLC)*: Manages communication between devices.
+        - *Media Access Control (MAC)*: Handles addressing and frame transmission.
+    - Encapsulates data into frames and uses MAC addresses.
+    - Devices: Network Interface Cards (NICs).
+    - Your data is FRAMES
+    - Protocols: PPP,NDP,CDP
+2. **Network Layer (Layer 3)**:
+    - Responsible for node-to-node delivery of messages.
+    - Routes data across networks using logical addresses (IP addresses).
+    - Determines the route from the source to the destination computer. Manages traffic problems, such as switching, routing, and controlling the congestion of data packets.
+    - Performs packet forwarding and routing.
+    - Devices: Routers, Layer 3 switches.
+    - Your data is PACKETS
+    - Protocols: ICMP,ARP,NAT,IP
+3. **Transport Layer (Layer 4)**:  
+    - Segments data into smaller units (segments or datagrams).
+    - Provides error detection, flow control, and reliable data transfer.
+    - Manages transmission packets
+        - Repackages long messages when necessary into small packets for transmission: *sender*
+        - Reassembles packets in correct order to get the original message: *receiver* 
+    -  Handles error recognition and recovery. 
+    - Transport layer at receiving acknowledges packet delivery. 
+    - Resends missing packets
+    - Your data is SEGMENTS
+    - Protocols: TCP (reliable) and UDP (unreliable).
+4. **Session Layer (Layer 5)**:
+    - Manages sessions (connections) between applications.
+    - Establishes, maintains, and terminates sessions.
+    - Handles synchronization and dialog control. Regulates which side transmits, plus when and how long it transmits.
+    - Allows data exchange between applications on different computers.
+    - Your data is DATA
+    - Protocols: RPC,NETBIOS
+5. **Presentation Layer (Layer 6)**:
+    - Focuses on data representation and encryption.
+    - Translates data formats between different systems. Ensures compatibility between applications.
+    - Handles encryption/decryption and compression.
+    - Your data is DATA
+    - Protocols: SSL
+6. **Application Layer (Layer 7)**:
+    - The topmost layer interacts directly with user applications.
+    - Provides network services that directly support software applications for file transfers, database access, and electronic email, BROWSERS etc.
+    - Your data is DATA
+    - Protocols: HTTP, FTP, SMTP, DNS, etc.
+![[Pasted image 20240206133624.png]]
+
+## TCP (Transmission Control Protocol)
+- **Connection-Oriented**: TCP establishes a connection before data transfer.
+- **Reliable**: It ensures reliable and error-checked data delivery.
+- **Flow Control**: TCP manages flow control to prevent congestion.
+- **Sequence Numbers**: Assigns sequence numbers to track transmitted segments.
+- **Slower**: TCP is comparatively slower due to its reliability mechanisms.
+- **Suitable for**: Applications where reliability and ordered data delivery are critical (e.g., web browsing, email).
+## UDP (User Datagram Protocol):
+- **Connectionless**: UDP does not establish a connection before sending data.
+- **Unreliable**: It does not guarantee delivery or error checking.
+- **Low Latency**: UDP is faster due to minimal overhead.
+- **No Flow Control**: No congestion control or flow management.
+- **Broadcast and Multicast**: Supports broadcasting and multicasting.
+- **Suitable for**: Real-time applications (e.g., video streaming, online gaming) where low latency matters.
+
+# TCP/IP model 
+- it is a concise version of the OSI (Open Systems Interconnection) model, specifically designed for communication over large distances. 
+- Developed by DoD in the 1960s, TCP/IP is based on standard protocols and serves as the foundation for the modern internet. 
+- When data is sent over the internet using the TCP/IP model, it is divided into packets at the sender’s end.
+- These packets are recombined at the receiver’s end to reconstruct the original data.
+- The model ensures accurate data transfer by dividing data into layers during transmission and reorganizing it at the receiver’s end.
+
+- Unlike the seven layers in the OSI model, the TCP/IP model consists of **four layers** (although sometimes referred to as five or four layers):
+        1. **Application Layer**: This layer interacts directly with user applications. It provides network services to applications (e.g., HTTP, FTP, SMTP).
+        2. **Transport Layer (TCP/UDP)**: Responsible for end-to-end communication between devices. It segments data into smaller units (segments or datagrams) and provides error detection, flow control, and reliable data transfer. Protocols include TCP (reliable) and UDP (unreliable).
+        3. **Network/Internet Layer (IP)**: Routes data across networks using logical addresses (IP addresses). It performs packet forwarding and routing.
+        4. **Data Link Layer (MAC)**: Handles addressing and frame transmission. It encapsulates data into frames and uses MAC addresses.
+# Firewall
+- A firewall is a network security device that monitors incoming and outgoing network traffic and decides whether to allow or block specific traffic based on a defined set of security rules.
+- It is Just A collection of rules to allow and deny network traffics
+- You can’t directly access some host directly from other Network.
+- *every OS have firewall Built-in*
+
+# Networking hardware (devices)
+- Network devices, also known as networking hardware, are essential for communication and interaction between devices on a computer network.
+- These devices play crucial roles in building and maintaining computer networks, ensuring efficient communication and data exchange.
+1. **Repeater**:
+    - Operates at the **physical layer**.
+    - Regenerates signals to extend their transmission distance within the same network.
+    - Amplifies and regenerates weak or corrupted signals.
+    - Essentially a **2-port device**.
+2. **Hub**:
+    - A **multi-port repeater**.
+    - Connects multiple wires from different branches (stations) in a star topology.
+    - Cannot filter data, so packets are sent to all connected devices (collision domain remains one).
+    - Types: Active Hub (with power supply), Passive Hub (collects power from an active hub), Intelligent Hub (includes remote management capabilities).
+3. **Bridge**: 
+    - Operates at the **data link layer**.
+    - Filters content based on **MAC addresses** (source and destination).
+    - Interconnects two LANs working on the same protocol.
+    - A **2-port device**.
+4. **Switch**:
+    - Also operates at the **data link layer**.
+    - Similar to a bridge but with multiple ports.
+    - Efficiently forwards data only to the intended recipient (reduces collision domains).
+    - Uses **MAC address tables** for efficient switching.
+5. **Router**:
+    - Operates at the **network layer (IP)**.
+    - Routes data between different networks using **logical IP addresses**.
+    - Performs packet forwarding and routing.
+    - Connects LANs or WANs.
+6. **Gateway**:
+    - Translates data between different network protocols (e.g., TCP/IP to X.25).
+    - Connects networks with different communication protocols.
+    - Often used for connecting LANs to the internet.
+7. **NIC (Network Interface Card)**:
+    - A hardware component that allows computers to connect to a network.
+    - Provides a physical interface (e.g., Ethernet port) for data transmission.
+    - Converts data between digital signals (inside the computer) and analog signals (on the network cable).
+
