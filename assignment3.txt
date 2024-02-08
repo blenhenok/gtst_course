@@ -1,6 +1,13 @@
 1. decimal representation of the subnet mask for CIDR: 10.200.20.0/27 = 255.255.255.224
+because- CLASS C = N.N.N.H = 24 bits = 255.255.255.0
+27 - 24  = 3bits = 11100000 = 224 0n the last octet
+
 
 2. the broadcasting address for CIDR: 10.200.20.0/27 = 10.200.20.31
+because - since the last N/ID is 3 bits = 8 subnets can be created
+#host IP = 2^5 - 2 = 32-2=30
+host range = 10.200.20.1 - 10.200.20.30
+# since broadcasting Ip is the last IP in the subnet range = 10.200.20.31
 
 3. 3rd subnet of 10.200.20.0/27 of the 4 subnets
 - To create four subnets, we need to borrow two additional bits from the host portion of the original /27 subnet.The subnet mask for the new subnets will be /29 (since 2^2 = 4).

@@ -277,3 +277,40 @@
     - The subnet mask `255.255.255.0` is equivalent to `/24`.
 
 ![[cidr.png]]
+
+## Network ID (Subnet ID):
+- The network ID represents the address that identifies the entire subnet.
+- It is the first address within the subnet range.
+- All devices within the same subnet share this common network ID.
+- For example, if you have a subnet with an IP range of 10.1.0.0/24, the network ID would be 10.1.0.0.
+## Broadcast ID
+- The broadcast ID is the last address within the subnet range.
+- It serves as a special address used to send data packets to all devices within the subnet.
+- When a device sends data to the broadcast address, all devices in the same subnet receive it.
+- For the same subnet (10.1.0.0/24), the broadcast ID would be 10.1.0.255.
+## Usable Host Addresses
+- Between the network ID and the broadcast ID, there are usable host addresses that can be assigned to individual devices.
+- These addresses are available for assigning to hosts (computers, servers, etc.) within the subnet.
+**Example:**
+- Consider a subnet with the IP range 10.1.0.0/24:
+    - Network ID (Subnet ID): 10.1.0.0
+    - Usable host addresses: 10.1.0.1 to 10.1.0.254
+    - Broadcast ID: 10.1.0.255
+
+***EXAMPLE:*** consider IP address: 205.150.65.0/26
+-  to calculate the decimal subnet address
+    - since N.N.N.H = 255.255.255.0 = 24 bits
+    - 26 - 24= 2 bits on the last octet = 11000000 = 2^7 + 2^6 = 192
+    - so subnet id = 255.255.255.192
+
+### How many subnets
+  - the number of subnets we can create from a certain network id differ
+  - number of subnets = **2^n**, n = bits sub netted or transferred
+  - number of hosts = **2^n - 2** , n= number of bits left or 0 bits
+**Example**: 205.150.65.0/26
+- 26-24= 2bits = 2^2 = 4 subnets can be created
+- 4 bits - 2 bits = 4 bits = 2^4 - 2 = 16-2= 14 hosts or host ranges
+- lets consider we want to create  10 subnets from this particular IP address
+    - 10bits found between 2^3 and 2^4 so we take 2^4
+    - so, we add the n=4 to the CIDR = 26+4 = 30
+    - which will result 205.150.65.0/30
