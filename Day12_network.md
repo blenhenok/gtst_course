@@ -57,8 +57,8 @@
 - When you connect to some network an IP address will be generated and given(automatically by DHCP or static way).
 
 - Every IP address has two parts:   
-    - **Network ID**: to identify the network, It classifies the network to which a specific host belongs.
-    - **Host ID**: identify the user, uniquely identifies a specific host within a TCP/IP network.
+    - **Network ID**: to identify the network, It classifies the network to which a specific host belongs. denoted by 1s.
+    - **Host ID**: identify the user, uniquely identifies a specific host within a TCP/IP network. denoted by 0s.
 
 **Example:**  192.168.123.12
        
@@ -72,30 +72,20 @@
 
 #### There are 5 classes of private IP address 
 - **CLASS A**:	Governments, have 24bits for hosts.
-
-| 10 | 3 | 2 | 1 |
-| ---- | ---- | ---- | ---- |
-| network | host | host | host |
 - **CLASS B**: 	medium Companies, Have 16bit of space for HOSTS
-
-| 10 | 3 | 2 | 1 |
-| ---- | ---- | ---- | ---- |
-| network | network | host | host |
-- **CLASS C**: 	small companies, Have 8bit of space for HOSTS and 24-bit of network
-
-| 10 | 3 | 2 | 1 |
-| ---- | ---- | ---- | ---- |
-| network | network  | network  | host |
+- **CLASS C**: 	small companies, Have 8bit of space for HOSTS and 24-bit of network.
 - **CLASS D**:	Multi Casting(streaming
 - **CLASS E**:	Future Use (IETF research)
     - both *reserved* for special purposes
 ....................... ...................... ............................
 
-| address class | high-order bits | first octet address range | number of bits in the network address | number of networks | number of hosts per network |
+| address class | network/ host | first octet address range | number of bits in the network address | number of networks | number of hosts per network |
 | ---- | ---- | ---- | ---- | ---- | ---- |
-| class A | 0 | 0-127 | 8 | 126 | 16,777,216 |
-| class B | 10 | 128-191 | 16 | 16,384 | 65,536 |
-| class C | 110 | 192-223 | 24 | 2,097,152 | 254 |
+| class A | N,H,H,H | 0-127 | 8 | 126 | 16,777,216 |
+| class B | N,N,H,H | 128-191 | 16 | 16,384 | 65,536 |
+| class C | N,N,N,H | 192-223 | 24 | 2,097,152 | 254 |
+| class D  |  | 224-239 |  |  |  |
+| class E |  | 240-254 |  |  |  |
 ## Reserved Ip address
 - Certain host addresses are reserved and cannot be assigned to devices on a network. 
 - Addresses beginning 127 are reserved for loopback and internal testing
@@ -254,3 +244,36 @@
     - Provides a physical interface (e.g., Ethernet port) for data transmission.
     - Converts data between digital signals (inside the computer) and analog signals (on the network cable).
 
+# Subnetting
+- - **Subnetting** is the process of dividing a larger network into smaller subnetworks (subnets) but has a unique subnet address.
+- it is essentially a network within a network. It allows for more efficient data transmission by reducing the distance data packets need to travel. 
+- it ensure that network traffic travels directly to its destination without unnecessary detours through routers.
+
+## Subnet Mask
+- It serves as a numeric value that distinguishes the network address from the host address within an IP address.
+- *A subnet is a smaller network within a network that requires a subnet mask.*
+- When you connect a device to a network, it receives an IP address. This IP address consists of two parts:
+    - The **network portion**, which identifies the overall network.
+    - The **host portion**, which specifies the individual device within that network.
+- Without a subnet mask, the network address and host address within an IP address would be indistinguishable.
+
+ - A subnet (short of subnetwork) describes the specific part of a network that shares the network’s IP address but has a unique subnet address. 
+ - A subnet mask, however, differentiates between the portion of an IP address that refers to the subnet and the portion which refers to the host.
+
+|  | network / host | default subnet address |
+| ---- | ---- | ---- |
+| class A | N,H,H,H | 255.0.0.0 |
+| class B | N,N,H,H | 255.255.0.0 |
+| class C | N,N,N,H | 255.255.255.0 |
+![[Pasted image 20240208095605.png]]
+
+## CIDR (Classless Inter-Domain Routing)
+- it’s a method used to allocate IP addresses more efficiently and improve data routing on the internet. Unlike traditional subnetting, which relies on fixed network classes (A, B, C), CIDR allows for more flexible address allocation.
+- In the early days of the internet, IP addresses were divided into five classes (A, B, C, D, E). Each class had a fixed number of octets for network identification and host addresses. However, this rigid classification led to inefficiencies and wasted addresses. CIDR was introduced to address these limitations and provide more flexibility.
+- CIDR notation specifies an IP address followed by a slash (‘/’) character and a decimal number.
+- The number after the slash represents the **prefix length** (the number of significant bits in the network portion).
+**For example:**
+    - An IP address like `192.168.0.5/24` indicates that the first 24 bits represent the network, leaving 8 bits for hosts.
+    - The subnet mask `255.255.255.0` is equivalent to `/24`.
+
+![[cidr.png]]

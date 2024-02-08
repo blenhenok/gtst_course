@@ -1,0 +1,15 @@
+1. decimal representation of the subnet mask for CIDR: 10.200.20.0/27 = 255.255.255.224
+
+2. the broadcasting address for CIDR: 10.200.20.0/27 = 10.200.20.31
+
+3. 3rd subnet of 10.200.20.0/27 of the 4 subnets
+- To create four subnets, we need to borrow two additional bits from the host portion of the original /27 subnet.The subnet mask for the new subnets will be /29 (since 2^2 = 4).
+- Let’s calculate the subnets:
+Subnet 1: 10.200.20.0/29
+Subnet 2: 10.200.20.8/29
+Subnet 3: 10.200.20.16 (This is the network address of the 3rd subnet!)
+Subnet 4: 10.200.20.24/29
+
+4.broadcasting address of the 2nd subnet of 10.200.20.0/27 of the 4 subnets
+The broadcast address is always the last address in a subnet.
+For the 2nd subnet (10.200.20.8/29), the broadcast address is 10.200.20.15.
