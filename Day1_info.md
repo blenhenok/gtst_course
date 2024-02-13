@@ -64,3 +64,62 @@ FOOTPRINTING = FOOTSTEP + PRINTING(LOGGING)
     - Subnets 
     - Hosts on that Network
     - Strength and security of that Network
+# personal information
+- The information we gather about a Persons are
+    - Full Name
+    - Address(Physical Address, All Social Media Address, Phone address)
+    - What the person loves
+    - Friends
+    - Status
+- Persons information can be gathered by active and passive.
+- gathering and Analyzing Different Information Based on Public resource is called *OSINT* ( Open Source Intelligence).
+
+- **Getting name by phone number**: https://www.truecaller.com/
+- **Social media address**: search engines(google, Bing, yahoo)
+- **IP geolocation**: If you got the private Ip address of someone you can insert it to https://www.iplocation.net 
+# Applications / Software
+- The information we gather about a Applications are
+    - Which programming language used
+    - Which framework used
+    - Source codes
+    - Their logic and Function
+# Reverse image search
+- Reverse image search is a technique of searching with images.
+- Ex: think like user posted a picture with a background of some area, if the user didnt talk about the place we can just search the image and the search engines will give as some similar photos where they are taken in same place(not 100% accurate) 
+- We can use:
+    - https://tineye.com/
+    - https://www.labnol.org/reverse/
+    - https://images.google.com/ 
+
+# Goggle docking (google hacking database)
+- it's not hacking into Google servers!
+- Google hacking is using different Google operators to effectively optimize search results.
+- It also involves using Google to identify vulnerabilities in websites.
+- Results are highly customizable.
+- THIS IS THE MOST POWERFUL SKILL OF HACKER!
+## Basic operators
+- don't add space between the sign and the word
+1. **Inclusion of something common (+)**: EX: `nathan hailu +geeztech +ceo`
+2. **Excluding terms(-)**: EX: `antivirus -software`
+3. **Search for the exact term(" ")**: EX: `"how to eat food"`
+4. **Placeholder( * )**: EX: `parlament votes on the * bill`
+5. **Boolean OR ( | )**: EX: `"nathanhailu" | "nathan hailu"`
+## Advanced operators
+- These are Syntaxes used by Google.	
+1. **intitle**: Google returns results with the word/phrase found within the title of the page
+Example: intitle:index.of, intitle:”Hackers Bible”
+2. **inurl** : Finds a specific term within the URL
+Example: inurl:view/index.shtml
+3. **filetype**: Searches for a specific filetype
+Example: “Hacking” filetype:pdf, filetype:txt
+4. **Intext**: Google returns links that contains Texts from that link
+Example: intext:”Hackers in Ethiopia”
+## Mixing operators
+**Example**:
+- intitle:admin intitle:login
+- "mysql dump" filetype:sql intext:password
+- inurl:securethiscompany.com intitle:index.of
+## Further on google docking
+- Further on google docking
+https://www.exploit-db.com/google-hacking-database 
+- If you do a lot of dockings with same ip address, Google will block you for some hours.
