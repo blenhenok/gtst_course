@@ -28,21 +28,18 @@ FOOTPRINTING = FOOTSTEP + PRINTING(LOGGING)
     - Name
     - DNS information
     - Subdomains, Assets, Contents
-
 ## Ip addresses
 - Active recon(on our terminal)
     - `ping 'website link'`
     - `nslookup 'website link'`
     - `host 'website link'`
 - Passive recon(www.nslookup.io)
-
 ## Development frameworks
 - Use simple browser extension 
     - Wapplyzer
     - Builtwith
 - Terminal tool
     - whatweb(sudo apt install whatweb)- `whatweb 'website link'`
-
 ## DNS information
 - For this you can use whois terminal +website tool
     - whois (sudo apt install whois)
