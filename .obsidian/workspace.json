@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Day2_Scan.md",
+                "file": "S2Day2_Scan.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Day2_Scan.md",
+                "file": "S2Day2_Scan.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Day2_Scan.md",
+                "file": "S2Day2_Scan.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Day2_Scan.md"
+                "file": "S2Day2_Scan.md"
               }
             }
           }
@@ -148,9 +148,9 @@
   },
   "active": "d938e771bf81bf65",
   "lastOpenFiles": [
-    "Day2_Scan.md",
+    "S2Day1_info.md",
+    "S2Day2_Scan.md",
     "cidr.png",
-    "Day1_info.md",
     "Day12_network.md",
     "Day6_FinalLinux.md",
     "Day5_LinuxRUN.md",
