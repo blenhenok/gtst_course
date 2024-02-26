@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "acfdbfb15efef3d7",
+        "id": "dd29b8d62f813828",
         "type": "tabs",
         "children": [
           {
-            "id": "d938e771bf81bf65",
+            "id": "ae503f00be0d0c5a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "S2Day2_Scan.md",
+                "file": "S2Day3_Malware.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "S2Day2_Scan.md",
+                "file": "S2Day3_Malware.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "S2Day2_Scan.md",
+                "file": "S2Day3_Malware.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "S2Day2_Scan.md"
+                "file": "S2Day3_Malware.md"
               }
             }
           }
@@ -146,10 +146,15 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "d938e771bf81bf65",
+  "active": "ae503f00be0d0c5a",
   "lastOpenFiles": [
-    "S2Day1_info.md",
+    "assignment 5- system penetration.pdf",
+    "assignment 5- system penetration.md",
+    "S2Day3_Malware.md",
+    "exploit3.jpg",
+    "exploit1.png",
     "S2Day2_Scan.md",
+    "S2Day1_info.md",
     "cidr.png",
     "Day12_network.md",
     "Day6_FinalLinux.md",
@@ -176,8 +181,6 @@
     "Pasted image 20240122165736.png",
     "Pasted image 20240122165654.png",
     "Pasted image 20240122112546.png",
-    "Pasted image 20240122112448.png",
-    "Pasted image 20240122110815.png",
     "Pasted image.md",
     "().md",
     "Day4_MoreLinux",

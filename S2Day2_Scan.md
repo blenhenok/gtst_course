@@ -7,7 +7,7 @@
 - To Discover Open Ports
 - To Discover Live Systems
 
-# Network scanning
+## Network scanning
 - There are Many kinds of scanning methods and tools for different purpose.
     - **For Network mainly**: NMAP, netdiscovery
     - **For Subdomain**: Sublist3r,subfinder,amass
@@ -16,7 +16,7 @@
 - It is used to scan Network, Ports, OS etc. It is made for windows and linux
 - ON kali linux it is built in.
 - To check the existence of nmap on your system: `nmap --version` 
-#### Live system discovery
+### Live system discovery
 - Discovering live system means, Checking up and running hosts(clients/servers) on a network.
 - We have seen Host checking last time with ping  sweep method.(getting Ip with link)
 ### Ping sweep
@@ -69,6 +69,12 @@
 - Example: anywhere when you access websites there is web port open(80,443), If you are getting some shell activity there is port 22 open
 - there problem, is there are some ports open without intention, this leads to attack
 - We can use nmap to check which port is open/closed And this is called **port discovery**
+- Syntax:
+    - `nmap IP`    =>    only the 1000 ports
+    - `nmap -p port 1,port2,port3 IP`     =>    only    port 1,2,3
+    - `nmap -p- IP`     =>  All the 65K port
+- We can use Another Trick with **netcat**
+    - `nc -nv 'ip address' 'port'` 
 
 # Scanning methods
 - Nmap scans network in different modes
@@ -76,7 +82,6 @@
     - TCP SYN (Stealth scan)
     - UDP scan
     - Xmas scan
-
 ### TCP scan 
 - An adversary uses full TCP connection attempts to determine if a port is open on the target system.
 - The scanning process involves completing a three-way handshake with a remote port. If the full handshake cannot be established, the port is reported as closed.
