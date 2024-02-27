@@ -41,7 +41,33 @@
     - **HUMAN BEINGS(HOSTS)**: Here, the vulnerability we got on those companies is The users/the host  so here we can use the social engineering attacks. 
     
 # The Social Engineering Toolkit (setoolkit)
-- 
-
-
-
+- The Social-Engineer Toolkit (SET) is a powerful open-source penetration testing framework specifically designed for social engineering. It allows you to perform advanced attacks against the human element in security assessments.
+- It is pre-built on kali and parrot.
+- To use: `sudo setoolkit` on linux terminal
+- `exit` to quit the setoolkit
+- Here are some of the most commonly used tools in the toolkit:
+1. **Spear-phishing**: This tool allows you to send a phishing email that appears to be from a trusted source, such as a colleague or a company.
+2. **Credential Harvester**: This tool allows you to create a fake login page for a popular website, such as Facebook or Gmail, and capture the victim’s credentials.
+3. **Bypass Anti-virus**: This tool allows you to create a payload that bypasses anti-virus software.
+4. **Infectious Media Generator**: This tool allows you to create a USB drive that automatically runs a payload when inserted into a victim’s computer.
+### Launching a Phishing Attack with the Social Engineering Toolkit
+- You can create a fake login page for a popular website, such as Facebook or Gmail, and capture the victim’s credentials.
+- To create a fake login page using the SET, follow these steps:
+1. Select “`1. Social-Engineering Attacks`” from the main menu.
+2. Select “`2. Website Attack Vectors`” from the submenu.
+3. Select “`3. Credential Harvester Attack Method`” from the submenu.
+4. Enter the IP address of your system and the port number that you want to use.
+5. Select the website that you want to create a fake login page.
+6. Enter a name for your fake login page and select a template.
+7. Once you have created your fake login page, you can send it to your victim by email, social media, or other means.
+## Automations
+- There are a lot of tools to do phishing. You can get them from github.
+    - SocialPhish
+    - Zphisher
+- As you see you can have all of those social media hacked. But you may get some errors and confusions now because we haven’t seen about port forwarding. we will see in upcoming class
+### How do we hack other websites
+- Websites like telegram, they don't use username and password, they use phone number as login. 
+- Here  we hack is the SMS code. To get this we can't just clone telegram, we just need to use social engineering.
+- Some telegram hacking scenarios
+    - Create a telegram support account and chat with them like they got a security breach and ask them to send the code we sent to you.(worked on 3 peoples)
+    - Create a telegram bot based on what the user loves then, ask questions like for the registration you need phone number, then be quick and add the number to the telegram and when u are sure the SMS is sent for them, ask them to send the registration code we sent then BOOM!(worked on 4 peoples) 
