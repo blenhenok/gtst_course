@@ -42,7 +42,7 @@ FOOTPRINTING = FOOTSTEP + PRINTING(LOGGING)
     - whatweb(sudo apt install whatweb)- `whatweb 'website link'`
 ## DNS information
 - For this you can use whois terminal +website tool
-    - whois (sudo apt install whois)
+    - whois (`sudo apt install whois`)
     - `dig 'website link'`
 
 # computers/ phones

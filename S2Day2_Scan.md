@@ -53,7 +53,7 @@
     - For example, emails go to a different port than webpages, even though both reach a computer over the same Internet connection.
 - On computer there are different 65,536 ports with different job(like the window and door). 1-1024 = reserved(well known) ports
 - **Example**:
-    - - **Ports 20 and 21:** FTP, File Transfer Protocol transfers files between a client and a serve and uses port numbers 20 & 21.
+    - **Ports 20 and 21:** FTP, File Transfer Protocol transfers files between a client and a serve and uses port numbers 20 & 21.
     - **Network Port 22:** The Protocol Secure Shell (SSH) creates secure network connections.
     - **Port 25:** For Email, use Simple Mail Transfer Protocol (SMTP).
     - **A Port 80:** Hypertext Transfer Protocol (HTTP) is the protocol that makes the World Wide Web possible.
