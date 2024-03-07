@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "69c99905fd2bea19",
+        "id": "93fa2a1ca918c761",
         "type": "tabs",
         "children": [
           {
-            "id": "70ad732dc7d9930f",
+            "id": "484bedad9a615eb1",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "S2Day6_Net.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -85,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "S2Day6_Net.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "S2Day6_Net.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -124,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "S2Day6_Net.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -147,11 +139,12 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "70ad732dc7d9930f",
+  "active": "484bedad9a615eb1",
   "lastOpenFiles": [
+    "S2Day7_Anon.md",
+    "S2Day6_Net.md",
     "S2Day5_crypto.md",
     "intro.md",
-    "S2Day6_Net.md",
     "Group Assignment 1- MYSQL.md",
     "assignment 5- system penetration.pdf",
     "S2Day1_info.md",
@@ -190,7 +183,6 @@
     "Exercise 1, from day8.md",
     "Untitled",
     "Pasted image 20240122165736.png",
-    "Pasted image.md",
     "Day4_MoreLinux",
     "CEH"
   ]
