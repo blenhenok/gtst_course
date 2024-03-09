@@ -4,15 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "93fa2a1ca918c761",
+        "id": "8694a917d00bc571",
         "type": "tabs",
         "children": [
           {
-            "id": "484bedad9a615eb1",
+            "id": "ca0750c5fb550ccb",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "S2Day8_Sys.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "S2Day8_Sys.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "S2Day8_Sys.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "S2Day8_Sys.md"
+              }
             }
           }
         ]
@@ -139,8 +147,21 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "484bedad9a615eb1",
+  "active": "ca0750c5fb550ccb",
   "lastOpenFiles": [
+    "Screenshot (12).png",
+    "S2Day8_Sys.md",
+    "S2Day11_CTF.md",
+    "wgel.thm writeup.md",
+    "Pasted image 20240308111938.png",
+    "Pasted image 20240308111833.png",
+    "Pasted image 20240308111629.png",
+    "Pasted image 20240308111448.png",
+    "Pasted image 20240308111413.png",
+    "Pasted image 20240308111337.png",
+    "1_VBKL9VRzNtt2_0xGKVsL8g.webp",
+    "Pasted image 20240308110001.png",
+    "Pasted image 20240308105819.png",
     "S2Day7_Anon.md",
     "S2Day6_Net.md",
     "S2Day5_crypto.md",
@@ -151,24 +172,16 @@
     "S2Day4_social.md",
     "S2Day3_Malware.md",
     "S2Day2_Scan.md",
-    "fs.png",
     "Drawing 2024-02-27 17.31.35.excalidraw.md",
     "Excalidraw/Drawing 2024-02-27 11.40.28.excalidraw.md",
     "Excalidraw",
-    "Pasted image 20240226160408.png",
     "assignment 5- system penetration.md",
-    "exploit3.jpg",
-    "exploit1.png",
-    "cidr.png",
     "Day12_network.md",
     "Day6_FinalLinux.md",
     "Day5_LinuxRUN.md",
     "assignment3.txt",
     "New Text Document.txt",
-    "Pasted image 20240208095714.png",
-    "Pasted image 20240208095605.png",
     "assignment2.py",
-    "Pasted image 20240206133624.png",
     "Day9_FurtherPy.md",
     "Day8_CorePy.md",
     "Day7_HelloPython.md",
@@ -176,13 +189,7 @@
     "Day10_FirstBash.md",
     "Day4_MoreLinux.md",
     "Day3_linuxUSER.md",
-    "Day2_linux.md",
-    "Day1_intro.md",
-    "Pasted image 20240205103750.png",
-    "CEH/intro to ethical hacking.md",
-    "Exercise 1, from day8.md",
     "Untitled",
-    "Pasted image 20240122165736.png",
     "Day4_MoreLinux",
     "CEH"
   ]
